@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2" >
+
+        <TextView
+            android:id="@+id/txt_receive"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:gravity="top"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btn_clear"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:text="@string/serial_console_clear"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" >
+
+                <RadioButton
+                    android:id="@+id/radio_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:text="@string/serial_console_radio_txt"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_hex"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="@string/serial_console_radio_hex"
+                    android:textSize="20sp" />
+            </RadioGroup>
+
+            <CheckBox
+                android:id="@+id/checkbox_autoclear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:checked="true"
+                android:gravity="center"
+                android:text="@string/serial_console_autoclear"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+    
+    
+    <!-- for send data -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/edit_send"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="6"
+            android:gravity="top"
+            android:imeOptions="actionDone"
+            android:singleLine="true"
+            android:textSize="20sp"
+            android:hint="@string/serial_console_edit_send_hint"
+             />
+        
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:text="@string/serial_console_btn_send" />
+    </LinearLayout>
+
+    <!-- for port setting -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <!-- for com choose -->
+        <Spinner
+            android:id="@+id/spinner_coms"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" 
+            android:layout_weight="1"
+            />
+
+        <!-- for Baud rate choose-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            >
+
+            <Spinner
+                android:id="@+id/spinner_baudRate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6" />
+
+            <ToggleButton
+                android:id="@+id/toggle_open"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="20sp" />
+        </LinearLayout>
+        
+        <!-- for auto send time -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center_vertical" 
+            android:layout_height="0dp" 
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            >
+
+            <EditText
+                android:id="@+id/edit_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:inputType="number"
+                android:text="@string/serial_console_text_500" />
+
+            <TextView
+                android:id="@+id/text_ms"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/serial_console_text_ms"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/checkbox_autotime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/serial_console_autotime"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+    
+</LinearLayout>

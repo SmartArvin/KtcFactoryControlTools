@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">KTC串行/Wlan通信集成工具 v1.0</string>
+    
+    <!-- main home -->
+    <string name="home_serial_console">串口手动测试</string>
+    <string name="home_serial_console_manual">串口自动测试</string>
+    <string name="home_manual">手动UI接口测试</string>
+    <string name="home_wlan">WLAN通信测试</string>
+    <string name="home_about">关于</string>
+    <string name="home_quit">退出</string>
+    
+    <!-- serial_activity_console -->
+    <string name="serial_console_clear">清除打印</string>
+    <string name="serial_console_radio_txt">TXT显示</string>
+    <string name="serial_console_radio_hex">HEX显示</string>
+    <string name="serial_console_autoclear">自动清除</string>
+    <string name="serial_console_edit_send_hint">请输入16进制</string>
+    <string name="serial_console_btn_send">发送</string>
+    <string name="serial_console_text_ms">ms</string>
+    <string name="serial_console_text_500">500</string>
+    <string name="serial_console_autotime">自动</string>
+    
+    <!-- serial_activity_console2 -->
+    <string name="serial_auto_console_clear">清除打印</string>
+    <string name="serial_auto_console_radio_txt">TXT显示</string>
+    <string name="serial_auto_console_radio_hex">HEX显示</string>
+    <string name="serial_auto_console_autoclear">自动清除</string>
+    <string name="serial_auto_console_status">命令响应状态</string>
+    <string name="serial_auto_console_loopback">TV回传信息</string>
+    
+    
+    <!-- about -->
+    <string name="about_msg">
+		声明：KTC串行/Wlan通信集成工具 v1.0是由康冠智能科技有限公司自主开发适配Android智能电视平台与PC终端实现串行及Wlan形式信息互传的通信集成工具，版权归康冠智能科技有限公司所有。任何未经授权的企业或个人不得非法使用，违者必究！
+		\n\n
+		KTC串行/Wlan通信集成工具 v1.0是基于Android通用串行通信协议及Wlan局域网通信协议开发实现。集成我司Android智能电视平台相关功能调试及常用信息获取功能，用以满足各生产环节智能无人化质检流程及开发阶段测试工作等。\n\n
+	</string>
+    <string name="error_configuration">请先正确配置串行端口！</string>
+    <string name="error_security">抱歉，当前设备端口没有数据读/写权限！</string>
+    <string name="error_unknown">抱歉，当前设备端口由于未知原因无法打开！</string>
+
+</resources>

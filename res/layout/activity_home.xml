@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="50dp"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout 
+        android:id="@+id/ly1"
+        android:layout_width="600dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+        <Button
+	        android:id="@+id/btn_serial_console"
+	        android:layout_width="0dp"
+	        android:layout_height="150dp"
+	        android:layout_weight="1"
+	        android:gravity="center"
+	        android:text="@string/home_serial_console" 
+	        android:textSize="22sp"
+	        android:onClick="onClick"/>
+    	<Button
+	        android:id="@+id/btn_serial_console_manual"
+	        android:layout_width="0dp"
+	        android:layout_height="150dp"
+	        android:layout_weight="1"
+	        android:gravity="center"
+	        android:text="@string/home_serial_console_manual" 
+	        android:textSize="22sp"
+	        android:onClick="onClick"/>
+    	
+	    <Button
+	        android:id="@+id/btn_manual"
+	        android:layout_width="0dp"
+	        android:layout_height="150dp"
+	        android:layout_weight="1"
+	        android:gravity="center"
+	        android:text="@string/home_manual" 
+	        android:textSize="22sp"
+	        android:onClick="onClick"/>
+	    
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="600dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+	    <Button
+	        android:id="@+id/btn_wlan"
+	        android:layout_width="0dp"
+	        android:layout_height="150dp"
+	        android:layout_weight="1"
+	        android:gravity="center"
+	        android:text="@string/home_wlan" 
+	        android:textSize="22sp"
+	        android:onClick="onClick"/>
+	    
+	    <Button
+	        android:id="@+id/btn_about"
+	        android:layout_width="0dp"
+	        android:layout_height="150dp"
+	        android:layout_weight="1"
+	        android:gravity="center"
+	        android:text="@string/home_about" 
+	        android:textSize="22sp"
+	        android:onClick="onClick"/>
+	
+	    <Button
+	        android:id="@+id/btn_quit"
+	        android:layout_width="0dp"
+	        android:layout_height="150dp"
+	        android:layout_weight="1"
+	        android:gravity="center"
+	        android:text="@string/home_quit" 
+	        android:textSize="22sp"
+	        android:onClick="onClick"/>
+	</LinearLayout>
+
+</LinearLayout>
